@@ -5,7 +5,7 @@ development brand. Built as one self-contained HTML file — no framework, no
 build step, no backend — and designed to showcase AI-powered tools and
 custom software projects.
 
-**Live site:**(https://1119071.github.io/level-up-systems-website/)
+**Live site:** https://1119071.github.io/level-up-systems-website/
 
 ---
 
