@@ -1,95 +1,113 @@
-# Level Up Systems — Portfolio Website
+# Level Up Systems — AI & Automation Portfolio
 
-A single-page portfolio site for **Level Up Systems**, a personal AI/automation
-development brand. Built as one self-contained HTML file — no framework, no
-build step, no backend — and designed to showcase AI-powered tools and
-custom software projects.
+A professional portfolio website showcasing practical projects in artificial intelligence, data analytics, automation, and software development.
 
-**Live site:** https://1119071.github.io/level-up-systems-website/
+Built as part of the **Level Up Systems** project portfolio while studying **Business IT & Management**.
+
+**Live Website:** https://1119071.github.io/level-up-systems-website/
 
 ---
 
 ## Overview
 
-The site is a single `index.html` file with four tabs, switched client-side
-with a small curtain transition animation:
+Level Up Systems is a personal software and AI portfolio brand focused on building practical digital solutions that combine technology, data, and business needs.
 
-- **Home** — hero intro, quick stats, and a "What I offer" services section
-  (AI Automation, Document Intelligence, Custom Software)
-- **About** — bio, focus areas, tech stack, and a short philosophy statement
-- **Projects** — a portfolio grid linking out to live project demos, each with
-  a details overlay describing the project, tech stack, and a direct "Open"
-  link
-- **Contact** — contact details (email, LinkedIn, phone, website) and a
-  message form
+The portfolio website provides an overview of selected projects and demonstrates how technologies such as artificial intelligence, data analytics, automation, and software development can be applied to practical business use cases.
 
-### Featured projects
-
-- **[ChurnAI](https://1119071.github.io/churnai-dashboard/)** — a customer
-  churn intelligence dashboard with a customer database, an interactive risk
-  calculator, and model performance charts. Fully multilingual (EN, JA, ZH,
-  DE, FR, ES). Data is synthetically generated for demonstration purposes.
-- **[BriefAI](https://1119071.github.io/pdf-summarizer/)** — a single-file,
-  in-browser PDF summarizer using `pdf.js` and an extractive summarization
-  algorithm. Runs entirely client-side: no backend, no account, no API key,
-  and the uploaded file never leaves the user's device.
-
-Both projects are hosted separately and opened from the Projects tab via
-direct links, so this site itself has no dependency on them beyond the URLs.
-
-### Contact form
-
-The "Send message" button on the Contact tab builds a pre-filled `mailto:`
-link (recipient, subject, and body assembled from the form fields) and opens
-it in the visitor's own email client. This requires no backend or third-party
-service, but does depend on the visitor having an email client configured.
-If a submission that doesn't require the visitor's own email client is
-preferred later, the form can be pointed at a service like
-[Formspree](https://formspree.io) instead.
+The website is a fully client-side static application built with plain HTML, CSS, and JavaScript.
 
 ---
 
-## Tech Stack
+## Website Sections
 
-- Plain HTML, CSS, and JavaScript — no framework, no build tools
-- Google Fonts: Cormorant Garamond (display) and Montserrat (UI/body)
-- Dark navy (`#07112b`) / electric blue (`#2A6FDB`) visual identity, shared
-  across this site and the individual project demos
+### 🏠 Home
 
----
+The homepage introduces Level Up Systems and provides an overview of the services and areas of focus.
 
-## Project Structure
+It includes:
 
-```
-level-up-systems/
-├── index.html     # The entire site (HTML + CSS + JS in one file)
-└── README.md
-```
+- Introduction and personal brand positioning
+- Quick portfolio statistics
+- AI Automation
+- Document Intelligence
+- Custom Software
 
 ---
 
-## Running It Locally
+### 👤 About
 
-No installation needed — it's a static HTML file.
+The About section provides information about the portfolio and its focus areas.
 
-1. Download/clone the repository
-2. Open `index.html` directly in a browser
+It includes:
 
-Or deploy it with GitHub Pages for a live URL (Settings → Pages → deploy from
-the branch containing `index.html`).
-
----
-
-## Notes on AI Usage
-
-This site was built using **Claude AI** (Anthropic) as part of the Level Up
-Systems portfolio. Concept, structure, and visual identity were directed by
-the site owner; Claude was used to generate and refine the code.
+- Personal introduction
+- Areas of interest
+- Technology stack
+- Development philosophy
 
 ---
 
-## About Level Up Systems
+### 🚀 Projects
 
-Level Up Systems is a personal software/AI portfolio brand, built while
-studying Business IT & Management, focused on practical AI tools and
-automation rather than demos or experiments.
+The Projects section presents selected software and AI projects developed as part of the Level Up Systems portfolio.
+
+Each project includes:
+
+- Project overview
+- Project details
+- Technologies used
+- Direct links to live demonstrations
+
+Featured projects currently include:
+
+#### ChurnAI — Customer Churn Intelligence Dashboard
+
+An interactive customer churn intelligence dashboard featuring:
+
+- Customer data exploration
+- Churn risk scoring
+- Risk factors
+- Retention recommendations
+- Model performance visualizations
+- Multilingual interface
+
+The dashboard uses synthetically generated data for demonstration purposes.
+
+#### BriefAI — Multilingual PDF Summarizer
+
+A privacy-first, browser-based PDF summarization tool that:
+
+- Extracts text from PDF documents
+- Detects the document language
+- Generates extractive summaries
+- Extracts important keywords
+- Supports multiple languages
+
+All processing takes place client-side without requiring a backend, account, API key, or external AI model.
+
+---
+
+### 📩 Contact
+
+The Contact section provides ways to get in touch and includes a contact form.
+
+The form uses a `mailto:` link to create a pre-filled email containing the visitor's submitted information.
+
+This approach requires no backend or third-party form service.
+
+---
+
+## Project Architecture
+
+The website is built as a single-page static application.
+
+```text
+Visitor
+   ↓
+Level Up Systems Website
+   ↓
+Client-Side Navigation
+   ↓
+Home | About | Projects | Contact
+   ↓
+External Project Demonstrations
